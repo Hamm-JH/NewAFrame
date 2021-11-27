@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Images</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Light-Blue Box -->
+        <a-box  color="#8EACBB"
+                src="Img/Water.jpg"
+                repeat = "1 1"
+                normal-map = "#metal-NRM"
+                normal-texture-repeat = "1 1"
+                normal-scale = "1 -1"
+                width="4" height="4" depth="4"
+                position="-2 1.5 -9" >
+
+        </a-box>
+
+        <a-sphere   material = "color: #0000AA;
+                                roughness: 0.2;
+                                shader: standard"
+                    radius = "0.5"
+                    position = "-2 1.5 -9">
+        </a-sphere>
+    </a-scene>
+</body>
+</html>
