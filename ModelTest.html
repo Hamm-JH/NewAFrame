@@ -10,22 +10,31 @@
         <a-assets>
             <img id="plane" src="Assets/plane2.jpg">
             <img id="background" src="Assets/galaxy.jpg">
+            <a-asset-item id="m300-o" src="Assets/300ver.obj"></a-asset-item>
+            <a-asset-item id="m300-m" src="Assets/300ver.mtl"></a-asset-item>
             <a-asset-item id="model1" src="Assets/a_windy_day/scene.gltf"></a-asset-item>
         </a-assets>
 
         <!-- sky (background) -->
-        <a-sky src="#background"></a-sky>
+        <!-- <a-sky src="#background"></a-sky> -->
 
         <!-- Camera -->
         <a-entity position="0 0 0">
             <a-camera></a-camera>
         </a-entity>
 
-        <a-entity gltf-model="#model1"
+        <!-- <a-entity gltf-model="#model1"
                     position="0 2 -2">
+        </a-entity> -->
+
+        <a-entity obj-model="obj: #m300-o; mtl: #m300-m"
+                    position = "0 0 0"
+                    color = "yellow"
+                    position = "10 -2 0"
+                    scale = "0.0001 0.0001 0.0001">
         </a-entity>
 
-        <!-- <a-plane material= -->
+        <!-- a-plane material -->
         <a-plane    material="color: #333333;
                             src: #plane;
                             repeat:1 1;"
